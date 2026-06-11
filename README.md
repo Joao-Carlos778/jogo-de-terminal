@@ -1,69 +1,71 @@
-29 ## ▶ Como Jogar                                                                                                                                                                                                                         
-30                                                                                                                                                                                                                                          
-31 **Pré-requisitos:** Node.js v16 ou superior                                                                                                                                                                                              
-32                                                                                                                                                                                                                                          
-33 ```bash                                                                                                                                                                                                                                  
-34 # Clone o repositório                                                                                                                                                                                                                    
-35 git clone https://github.com/seu-usuario/jogo-de-terminal.git                                                                                                                                                                            
-36 cd jogo-de-terminal                                                                                                                                                                                                                      
-37                                                                                                                                                                                                                                          
-38 # Instale as dependências                                                                                                                                                                                                                
-39 npm install                                                                                                                                                                                                                              40                                                                                                                                                                                                                                          
-41 # Inicie o jogo                                                                                                                                                                                                                          
-42 npm start                                                                                                                                                                                                                                
-43 ```         s                                                                                                                                                                                                                            
-44                                                                                                                                                                                                                                          
-45 ---         s                                                                                                                                                                                                                            
-46                                                                                                                                                                                                                                          
-47 ## ⚠ Perigos                                                                                                                                                                                                                            
-48                                                                                                                                                                                                                                          
-49 O monstro pode te encontrar em situações específicas:                                                                                                                                                                                    
-50                                                                                                                                                                                                                                          
-51 - Explorar o porão sem cuidado                                                                                                                                                                                                           
-52 - Tentar abrir a garagem sem a chave                                                                                                                                                                                                     
-53 - Ficar muito tempo no corredor (chance aleatória)                                                                                                                                                                                       54 - Tomar certas decisões erradas no Quarto                                                                                                                                                                                                
-55                                                                                                                                                                                                                                          
-56 ---             s                                                                                                                                                                                                                        
-57                                                                                                                                                                                                                                          
-58 ## 🛠 Tecnologias                                                                                                                                                                                                                        
-59                                                                                                                                                                                                                                          
-60 - **Node.js** — runtime JavaScript                                                                                                                                                                                                       
-61 - **chalk** — colorização do terminal                                                                                                                                                                                                    
-62 - **readline/promises** — leitura de entrada do usuário (módulo nativo do Node)                                                                                                                                                          
-63 - **ESModules** — arquitetura modular com `import/export`                                                                                                                                                                                
-64                                                                                                                                                                                                                                          
-65 ---                                                                                                                                                                                                                                      
-66                                                                                                                                                                                                                                          
-67 ## 📁 Estrutura do Projeto                                                                                                                                                                                                               
-68                                                                                                                                                                                                                                          
-69 ```                                                                                                                                                                                                                                      
-70 projetos/                                                                                                                                                                                                                                
-71 ├── app.js                  # Loop principal do jogo                                                                                                                                                                                     
-72 ├── package.json                                                                                                                                                                                                                         
-73 └── src/                                                                                                                                                                                                                                 
-74     ├── estado.js           # Estado global do jogo                                                                                                                                                                                      
-75     ├── monstro/                                                                                                                                                                                                                         
-76     │   └── desenho.js      # Arte ASCII e animação do monstro                                                                                                                                                                           
-77     └── salas/                                                                                                                                                                                                                           
-78         └── mansao.js       # Definição de todas as salas e conexões                                                                                                                                                                     
-79 ```                                                                                                                                                                                                                                      
-80                                                                                                                                                                                                                                          
-81 ---                                                                                                                                                                                                                                      
-82                                                                                                                                                                                                                                          
-83 ## 👤 Autor                                                                                                                                                                                                                              
-84                                                                                                                                                                                                                                          
-85 **João Carlos, João Vitor & David de Souza**                                                                                                                                                                                             
-86 Estudantes de Tecnologia — IFRO Campus Vilhena                                                                                                                                                                                           
-87                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                            
-redme.md (87,1) | ft:markdown | unix | utf-8                                                                                                                                                                   Alt-g: bindings, Ctrl-g: help
-Saved redme.md                                                                                                                                                                                                                              
+# 🎮 Jogo de Terminal
+
+Um jogo de aventura interativo desenvolvido em JavaScript para execução no terminal utilizando Node.js.
+
+## 📖 Sobre o Projeto
+
+Este projeto consiste em um jogo de exploração em que o jogador navega por diferentes ambientes, toma decisões e interage com objetos para avançar na história.
+
+O objetivo é proporcionar uma experiência simples e divertida diretamente pelo terminal.
+
+## 🚀 Tecnologias Utilizadas
+
+- JavaScript
+- Node.js
+- Readline (entrada de dados pelo terminal)
+
+## 📂 Estrutura do Projeto
+
+projetos/
+├── app.js                  # Loop principal do jogo
+├── package.json
+└── src/
+    ├── estado.js           # Estado global do jogo
+    ├── monstro/
+    │   └── desenho.js      # Arte ASCII e animação do monstro
+    └── salas/
+        └── mansao.js       # Definição de todas as salas e conexões
+        
+## ▶️ Como Executar
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/Joao-Carlos778/jogo-de-terminal.git
+```
+
+### 2. Entre na pasta do projeto
+
+```bash
+cd jogo-de-terminal
+```
+
+### 3. Instale as dependências
+
+```bash
+npm install
+```
+
+### 4. Execute o jogo
+
+```bash
+node index.js
+```
+
+## 🎯 Funcionalidades
+
+- Navegação entre salas
+- Sistema de escolhas
+- Interação com objetos
+- Narrativa em texto
+- Execução diretamente no terminal
+
+## 📚 Objetivo Acadêmico
+
+Projeto desenvolvido para fins de estudo e prática de programação em JavaScript e lógica de programação.
+
+## 👨‍💻 Autores
+
+João Carlos, João vitor & David de Souza
+
+GitHub: https://github.com/Joao-Carlos778

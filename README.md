@@ -13,9 +13,9 @@ O objetivo é proporcionar uma experiência simples e divertida diretamente pelo
 - JavaScript
 - Node.js
 - Readline (entrada de dados pelo terminal)
-
 ## 📂 Estrutura do Projeto
 
+```text
 projetos/
 ├── app.js                  # Loop principal do jogo
 ├── package.json
@@ -25,6 +25,7 @@ projetos/
     │   └── desenho.js      # Arte ASCII e animação do monstro
     └── salas/
         └── mansao.js       # Definição de todas as salas e conexões
+```
         
 ## ▶️ Como Executar
 
@@ -49,7 +50,7 @@ npm install
 ### 4. Execute o jogo
 
 ```bash
-node index.js
+npm start
 ```
 
 ## 🎯 Funcionalidades

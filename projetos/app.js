@@ -1,3 +1,5 @@
+/* Alunos: João Carlos, Vitor Castaman & David De Souza */
+
 import { salasMansao } from "./src/salas/mansao.js";
 import { ESTADO } from "./src/estado.js";
 import { createInterface } from "node:readline/promises";
